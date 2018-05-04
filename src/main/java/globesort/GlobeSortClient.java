@@ -42,14 +42,14 @@ public class GlobeSortClient {
         System.out.println("Pinging " + serverStr + "...");
 	long Time1=System.currentTimeMillis();
         serverStub.ping(Empty.newBuilder().build());
-	long Time2=System.currentTimeMills();
+	long Time2=System.currentTimeMillis();
         System.out.println("Ping successful.");
 
         System.out.println("Requesting server to sort array");
         IntArray request = IntArray.newBuilder().addAllValues(Arrays.asList(values)).build();
 	long Time3=System.currentTimeMillis();
         IntArray response = serverStub.sortIntegers(request);
-	long Time4=System.currentTimeMills();
+	long Time4=System.currentTimeMillis();
 	long sort_time=Time4-Time3;
 	long ping_time=Time2-Time1;
         System.out.println("Sorted array");
