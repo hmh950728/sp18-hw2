@@ -97,7 +97,7 @@ public class GlobeSortServer {
             responseObserver.onNext(response);
             responseObserver.onCompleted();
 	long timeNow2 = System.currentTimeMillis();
-	    long server_sortime=timeNow2-timeNow1
+	    long server_sortime=timeNow2-timeNow1;
 		System.out.println("server sort time:"+server_sortime);
         }
     }
