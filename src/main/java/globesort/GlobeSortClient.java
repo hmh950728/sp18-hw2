@@ -54,6 +54,7 @@ public class GlobeSortClient {
 	long ping_time=Time2-Time1;
         System.out.println("Sorted array");
 	System.out.println("Sorted array time:"+sort_time);
+	System.out.println("Ping time:"+ping_time);
     }
 
     public void shutdown() throws InterruptedException {
